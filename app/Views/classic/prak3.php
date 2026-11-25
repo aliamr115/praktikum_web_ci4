@@ -1,0 +1,157 @@
+<?= $this->extend('layouts/classic') ?>
+
+<?= $this->section('head') ?>
+    <style>
+      table {
+        border-collapse: collapse;
+        margin-bottom: 30px; /* jarak antar tabel */
+      }
+
+      td {
+        border: 2px solid black;
+        padding: 25px;
+      }
+
+      h3 {
+        margin-top: 30px;
+      }
+    </style>
+<?= $this->endSection() ?>
+
+<?= $this->section('content') ?>
+
+    <h3>Daftar Barang</h3>
+    <table border="2">
+      <caption>
+        Tabel Harga Produk
+      </caption>
+
+      <tr>
+        <th>Kode Produk</th>
+        <th>Nama Produk</th>
+        <th>Harga</th>
+        <th>Gambar</th>
+      </tr>
+      <tr>
+        <td>P001</td>
+        <td>Kipas Angin</td>
+        <td>400.000</td>
+        <td><img src="<?= base_url('img/kipasangin.png') ?>" width="145" height="150" /></td>
+      </tr>
+      <tr>
+        <td>P002</td>
+        <td>Lemari Es</td>
+        <td>1700.000</td>
+        <td><img src="<?= base_url('img/lemari_es.png') ?>" width="145" height="150" /></td>
+      </tr>
+      <tr>
+        <td>P003</td>
+        <td>Mesin Cuci</td>
+        <td>2000.000</td>
+        <td><img src="<?= base_url('img/mesincuci.png') ?>" width="145" height="150" /></td>
+      </tr>
+    </table>
+
+    <h3>TABEL - TABEL</h3>
+    <!---TABEL1--->
+    <table border="2">
+      <caption>
+        Tabel Satu
+      </caption>
+      <tr>
+        <td>TABEL1</td>
+        <td colspan="2"></td>
+      </tr>
+
+      <tr>
+        <td rowspan="2"></td>
+        <td>TABEL1</td>
+        <td>TABEL1</td>
+      </tr>
+      <tr>
+        <td>TABEL1</td>
+        <td>TABEL1</td>
+      </tr>
+    </table>
+
+    <!---TABEL2--->
+    <table border="2">
+      <caption>
+        Tabel Dua
+      </caption>
+      <tr>
+        <td>TABEL2</td>
+        <td>TABEL2</td>
+        <td rowspan="3">TABEL2</td>
+      </tr>
+
+      <tr>
+        <td>TABEL2</td>
+        <td>TABEL2</td>
+      </tr>
+      <tr>
+        <td>TABEL2</td>
+        <td>TABEL2</td>
+      </tr>
+    </table>
+
+    <!---TABEL3--->
+    <table border="2">
+      <caption>
+        Tabel Tiga
+      </caption>
+      <tr>
+        <td>TABEL3</td>
+        <td>TABEL3</td>
+        <td>TABEL3</td>
+      </tr>
+
+      <tr>
+        <td colspan="3">TABEL3</td>
+      </tr>
+      <tr>
+        <td>TABEL3</td>
+        <td>TABEL3</td>
+        <td>TABEL3</td>
+      </tr>
+    </table>
+
+    <!---TABEL4--->
+    <table border="2">
+      <caption>
+        Tabel Empat
+      </caption>
+      <tr>
+        <td>TABEL4</td>
+        <td>TABEL4</td>
+        <td>TABEL4</td>
+      </tr>
+
+      <tr>
+        <td>TABEL4</td>
+        <td>TABEL4</td>
+        <td>TABEL4</td>
+      </tr>
+      <tr>
+        <td colspan="3">TABEL4</td>
+      </tr>
+    </table>
+
+    <!---TABEL5--->
+    <table border="1" cellpadding="30">
+      <caption>
+        Tabel Kelima
+      </caption>
+      <tr>
+        <th rowspan="2" style="width: 20%">TABEL5</th>
+        <th rowspan="3" style="width: 20%">TABEL5</th>
+        <th style="width: 20%">TABEL5</th>
+      </tr>
+      <tr style="height: 150px">
+        <td rowspan="2">TABEL5</td>
+      </tr>
+      <tr style="height: 20px">
+        <td>TABEL5</td>
+      </tr>
+    </table>
+<?= $this->endSection() ?>

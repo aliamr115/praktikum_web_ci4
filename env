@@ -1,0 +1,21 @@
+#--------------------------------------------------------------------
+# ENVIRONMENT
+#--------------------------------------------------------------------
+CI_ENVIRONMENT = development
+
+#--------------------------------------------------------------------
+# APP
+#--------------------------------------------------------------------
+app.baseURL = 'http://localhost:8080/'
+app.indexPage = ''
+
+#--------------------------------------------------------------------
+# DATABASE  (Modul 10)
+# default = db_web (CRUD user). Koneksi db_kampus memakai host/user/password yang sama.
+#--------------------------------------------------------------------
+database.default.hostname = localhost
+database.default.database = db_web
+database.default.username = root
+database.default.password =
+database.default.DBDriver = MySQLi
+database.default.port = 3306

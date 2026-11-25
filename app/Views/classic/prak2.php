@@ -1,0 +1,30 @@
+<?= $this->extend('layouts/classic') ?>
+
+<?= $this->section('content') ?>
+
+    <h3>Membuat Unordered List</h3>
+    <img src="<?= base_url('img/telur_goreng.png') ?>" height="150" /><br />
+    <strong
+      ><i><u>Bahan-bahan Memasak Telur Goreng</u></i></strong
+    >
+    <ul style="list-style-type: circle">
+      <li>Telur 3 butir</li>
+      <li>Margarin (1 sdm)</li>
+      <li>Batang Daun Bawang</li>
+      <li>Bawang Merah (2 butir)</li>
+      <li>Cabai Merah Keriting(2 buah)</li>
+      <li>Lada 1/4 sdt</li>
+      <li>Garam 1/4 sdt</li>
+    </ul>
+    <h3>Membuat Ordered List</h3>
+    <strong
+      ><i><u>Cara Memasak Telor Goreng</u></i></strong
+    >
+    <ol>
+      <li>Campur semua bahan diatas</li>
+      <li>Kocok semua bahan hingga merata</li>
+      <li>Panaskan margarin</li>
+      <li>Goreng dan dadar hingga kuning keemasan (matang)</li>
+      <li>Selesai dan masakan di hidangkan</li>
+    </ol>
+<?= $this->endSection() ?>

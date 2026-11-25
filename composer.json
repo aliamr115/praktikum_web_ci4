@@ -1,0 +1,25 @@
+{
+    "name": "alia/praktikum-web-ci4",
+    "description": "Website Praktikum Web (AmrWeb) - Alia Masrukhatur Rizkiyah, versi CodeIgniter 4",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "codeigniter4/framework": "^4.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Config\\": "app/Config/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": ["@php scripts/bootstrap.php"],
+        "post-update-cmd": ["@php scripts/bootstrap.php"]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
